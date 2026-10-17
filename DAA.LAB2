@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int a = 2, b = 10, result = 1;
+
+    while (b > 0) {
+        if (b % 2 == 1)
+            result = result * a;
+
+        a = a * a;
+        b = b / 2;
+    }
+
+    printf("Result = %d", result);
+    return 0;
+}
